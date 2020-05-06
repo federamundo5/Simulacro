@@ -1,0 +1,28 @@
+
+<app-bienvenido></app-bienvenido>
+
+<div id ="container">
+<div>
+<form   [formGroup]="formulario" (ngSubmit)="onSubmit(formulario.value)">
+  
+      Nombre Pelicula:
+      <input type="text" formControlName="Nombre">
+      <br>
+       Tipo:
+      <input type="text" formControlName="tipo">
+      <br>
+      Cantidad Publico:
+      <input type="number" formControlName="cantidadPublico">
+      <br>
+      Fecha Estreno:
+      <input type="date" formControlName="fechaEstreno">
+  </form>
+
+  <button type="submit" (click)="onSubmit(formulario.value)">Submit</button>
+
+  <br>
+</div>
+
+
+</div>
+

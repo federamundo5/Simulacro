@@ -1,0 +1,23 @@
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">FechaNacimiento</th>
+        <th scope="col">Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let actor of actores" >
+        <th>{{actor.Nombre}}</th>
+        <td>{{actor.Apellido}}</td>
+        <td>{{actor.Sexo}}</td>
+        <td>{{actor.FechaNacimiento}}</td>
+        <td> <img [src]="actor.Foto" width="80px" > </td>
+      </tr>
+    </tbody>
+  </table>

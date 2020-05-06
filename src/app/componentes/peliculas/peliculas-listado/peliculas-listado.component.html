@@ -1,0 +1,6 @@
+<p>Listado de Peliculas</p>
+
+
+
+<app-tabla-pelicula (peliculaSeleccionada)="enviarPeliculaSeleccionada($event)" [peliculas]="this.peliculas" ></app-tabla-pelicula>
+<app-detalle-pelicula  (eliminarPelicula)="eliminar($event)" [detallePelicula]="this.peliculaSeleccionada" > </app-detalle-pelicula>
