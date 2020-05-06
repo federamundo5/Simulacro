@@ -33,8 +33,6 @@ export class PeliculaAltaComponent implements OnInit {
     this.pelicula =  new Pelicula(51,this.formulario.value.Nombre,this.formulario.value.tipo,this.formulario.value.fechaEstreno,this.formulario.value.cantidadPublico)
     this.peliculasService.agregarPelicula(this.pelicula);
   }
-//var yahooOnly = JSON.parse(jsondata).filter(function (entry) {
-  return entry.website === 'yahoo';
-});
+
 
 }
