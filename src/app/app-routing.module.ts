@@ -10,11 +10,12 @@ import { PeliculasListadoComponent } from './componentes/peliculas/peliculas-lis
 
 const routes: Routes = [
 
-  {path: 'Bienvenido', component: BienvenidoComponent },
+  {path: 'Bienvenido', component: ActorListadoComponent },
   {path: 'Busqueda', component: BusquedaComponent },
   {path: 'Peliculas/alta', component: PeliculaAltaComponent },
   {path: 'Actor/alta', component: ActorAltaComponent },
   {path: 'Actor/listado', component: ActorListadoComponent },
+  {path: '' , component: BienvenidoComponent},
   {path: 'Peliculas/listado', component: PeliculasListadoComponent },
   {path: '**', pathMatch: 'full', redirectTo: 'Bienvenido'}
 
